@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template home2 working of form</title>
+</head>
+<body>
+
+    <!--   The bellow attribute action says that after submiting the form it will search for the count as name
+           in urls.py  file. whichever the url from that file has attribute name matches to this name from '*' will be run
+           it doesnt bother about what is url you have provided even if you change the url it willnot affetcted as the name
+           attribute of url will be same always.
+    -->
+    <form action="{% url 'count'%}" >
+        <textarea name="fulltextarea" cols="40" rows="10"></textarea>
+        <input type="submit" value="count"/>
+
+
+
+
+    </form>
+
+
+</body>
+</html>
