@@ -28,7 +28,7 @@ urlpatterns = [
   #path('', views.homepage),             #this is default url it will call homepage() function from views.py
   #path('contact', views.contact),        #this is second url it will call contact() function from views.py for that give url/contact
   #path('', views.template_homepage),     # this url will directly call template_homepage() function fron views.py and there render function will call home.html file from templates folder.
- path('home3/', views.template_homepage2, name="main_page"),  # this url will call template_homepage2() function and there once user clicks count button it will call following url automatically
+ path('home2/', views.template_homepage2, name="main_page"),  # this url will call template_homepage2() function and there once user clicks count button it will call following url automatically
   path('wordcount/',views.count,name="count"), # this url will be called once user clicked on count button from form. this url will be identified by its name not by its url in form.
   #url(r'^music/', include('music.urls')),
 ]
